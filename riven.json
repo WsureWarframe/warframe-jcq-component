@@ -1,0 +1,1594 @@
+{
+  "M2": [
+    {
+      "Property": "近战伤害",
+      "Min": 16.33,
+      "Max": 19.93
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "暴击率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.9,
+      "Max": 12.1
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.5,
+      "Max": 5.4
+    },
+    {
+      "Property": "攻击速度",
+      "Min": 5.4,
+      "Max": 6.6
+    },
+    {
+      "Property": "充能效率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "充能伤害",
+      "Min": 14.9,
+      "Max": 18.2
+    },
+    {
+      "Property": "处决伤害",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "攻击范围",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "滑行攻击造成暴击几率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "连击持续时间",
+      "Min": 0.8,
+      "Max": 1.0
+    }
+  ],
+  "M3": [
+    {
+      "Property": "近战伤害",
+      "Min": 12.4,
+      "Max": 15.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 7.5,
+      "Max": 9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 3.4,
+      "Max": 4.1
+    },
+    {
+      "Property": "攻击速度",
+      "Min": 4.1,
+      "Max": 5.0
+    },
+    {
+      "Property": "充能效率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "充能伤害",
+      "Min": 11.3,
+      "Max": 13.8
+    },
+    {
+      "Property": "处决伤害",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "攻击范围",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "滑行攻击造成暴击几率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "连击持续时间",
+      "Min": 0.6,
+      "Max": 0.7
+    }
+  ],
+  "M2M": [
+    {
+      "Property": "近战伤害",
+      "Min": 20.4,
+      "Max": 24.9,
+      "MinusMin": -8.2,
+      "MinusMax": -10.0
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.2
+    },
+    {
+      "Property": "暴击率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "触发几率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 12.4,
+      "Max": 15.1,
+      "MinusMin": -4.9,
+      "MinusMax": -6.0
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 5.6,
+      "Max": 6.8,
+      "MinusMin": -2.2,
+      "MinusMax": -2.7
+    },
+    {
+      "Property": "攻击速度",
+      "Min": 6.8,
+      "Max": 8.3,
+      "MinusMin": -2.7,
+      "MinusMax": -3.3
+    },
+    {
+      "Property": "充能效率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "充能伤害",
+      "Min": 18.6,
+      "Max": 22.7,
+      "MinusMin": -7.4,
+      "MinusMax": -9.1
+    },
+    {
+      "Property": "处决伤害",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.2
+    },
+    {
+      "Property": "攻击范围",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.2
+    },
+    {
+      "Property": "滑行攻击造成暴击几率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "连击持续时间",
+      "Min": 1.0,
+      "Max": 1.2,
+      "MinusMin": -0.4,
+      "MinusMax": -0.5
+    }
+  ],
+  "M3M": [
+    {
+      "Property": "近战伤害",
+      "Min": 15.4,
+      "Max": 18.9,
+      "MinusMin": -12.4,
+      "MinusMax": -15.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.4,
+      "Max": 11.5,
+      "MinusMin": -7.5,
+      "MinusMax": -9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.2,
+      "Max": 5.2,
+      "MinusMin": -3.4,
+      "MinusMax": -4.1
+    },
+    {
+      "Property": "攻击速度",
+      "Min": 5.1,
+      "Max": 6.3,
+      "MinusMin": -4.1,
+      "MinusMax": -5.0
+    },
+    {
+      "Property": "充能效率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "充能伤害",
+      "Min": 14.1,
+      "Max": 17.2,
+      "MinusMin": -11.3,
+      "MinusMax": -13.8
+    },
+    {
+      "Property": "处决伤害",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "攻击范围",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "滑行攻击造成暴击几率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "连击持续时间",
+      "Min": 0.8,
+      "Max": 0.9,
+      "MinusMin": -0.6,
+      "MinusMax": -0.7
+    }
+  ],
+  "R2": [
+    {
+      "Property": "多重射击",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "伤害",
+      "Min": 16.3,
+      "Max": 20.0
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "暴击率",
+      "Min": 14.8,
+      "Max": 18.1
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.9,
+      "Max": 12.1
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.5,
+      "Max": 5.4
+    },
+    {
+      "Property": "射速（弓类武器效果加倍）",
+      "Min": 5.9,
+      "Max": 7.3
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 5.0,
+      "Max": 6.1
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 4.9,
+      "Max": 6.0
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "装填速度",
+      "Min": 5.0,
+      "Max": 6.1
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -8.9,
+      "Max": -10.9
+    },
+    {
+      "Property": "变焦",
+      "Min": 5.9,
+      "Max": 7.3
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.27,
+      "Max": 0.32
+    }
+  ],
+  "R3": [
+    {
+      "Property": "多重射击",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "伤害",
+      "Min": 12.4,
+      "Max": 15.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 11.2,
+      "Max": 13.7
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 7.5,
+      "Max": 9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 3.4,
+      "Max": 4.1
+    },
+    {
+      "Property": "射速（弓类武器效果加倍）",
+      "Min": 4.5,
+      "Max": 5.5
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 3.8,
+      "Max": 4.6
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 3.7,
+      "Max": 4.6
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "装填速度",
+      "Min": 3.8,
+      "Max": 4.6
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -6.8,
+      "Max": -8.3
+    },
+    {
+      "Property": "变焦",
+      "Min": 4.5,
+      "Max": 5.5
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.2,
+      "Max": 0.24
+    }
+  ],
+  "R2M": [
+    {
+      "Property": "多重射击",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "伤害",
+      "Min": 20.4,
+      "Max": 25.0,
+      "MinusMin": -8.2,
+      "MinusMax": -10.0
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.3
+    },
+    {
+      "Property": "暴击率",
+      "Min": 18.6,
+      "Max": 22.7,
+      "MinusMin": -7.4,
+      "MinusMax": -9.1
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 14.9,
+      "Max": 18.2,
+      "MinusMin": -5.9,
+      "MinusMax": -7.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "触发几率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 12.4,
+      "Max": 15.1,
+      "MinusMin": -4.9,
+      "MinusMax": -6.0
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 5.6,
+      "Max": 6.8,
+      "MinusMin": -2.2,
+      "MinusMax": -2.7
+    },
+    {
+      "Property": "射速（弓类武器效果加倍）",
+      "Min": 7.4,
+      "Max": 9.1,
+      "MinusMin": -3.0,
+      "MinusMax": -3.6
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "装填速度",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -11.1,
+      "Max": -13.6,
+      "MinusMin": 4.5,
+      "MinusMax": 5.4
+    },
+    {
+      "Property": "变焦",
+      "Min": 7.4,
+      "Max": 9.1,
+      "MinusMin": -3.0,
+      "MinusMax": -3.6
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.33,
+      "Max": 0.41,
+      "MinusMin": -0.13,
+      "MinusMax": -0.16
+    }
+  ],
+  "R3M": [
+    {
+      "Property": "多重射击",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "伤害",
+      "Min": 15.5,
+      "Max": 18.9,
+      "MinusMin": -12.4,
+      "MinusMax": -15.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 14.1,
+      "Max": 17.2,
+      "MinusMin": -11.2,
+      "MinusMax": -13.7
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 11.3,
+      "Max": 13.8,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.4,
+      "Max": 11.5,
+      "MinusMin": -7.5,
+      "MinusMax": -9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.2,
+      "Max": 5.2,
+      "MinusMin": -3.4,
+      "MinusMax": -4.1
+    },
+    {
+      "Property": "射速（弓类武器效果加倍）",
+      "Min": 5.6,
+      "Max": 6.9,
+      "MinusMin": -4.5,
+      "MinusMax": -5.5
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "装填速度",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "武器后座力",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "变焦",
+      "Min": 5.6,
+      "Max": 6.9,
+      "MinusMin": -4.5,
+      "MinusMax": -5.5
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.25,
+      "Max": 0.31,
+      "MinusMin": -0.2,
+      "MinusMax": -0.24
+    }
+  ],
+  "S2": [
+    {
+      "Property": "多重射击",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "伤害",
+      "Min": 16.3,
+      "Max": 19.9
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "暴击率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.9,
+      "Max": 12.1
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.5,
+      "Max": 5.4
+    },
+    {
+      "Property": "射速",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 5.0,
+      "Max": 6.1
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "装填速度",
+      "Min": 5.0,
+      "Max": 6.1
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -8.9,
+      "Max": -10.9
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.27,
+      "Max": 0.32
+    }
+  ],
+  "S3": [
+    {
+      "Property": "多重射击",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "伤害",
+      "Min": 12.4,
+      "Max": 15.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 7.5,
+      "Max": 9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 3.4,
+      "Max": 4.1
+    },
+    {
+      "Property": "射速",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 3.8,
+      "Max": 4.6
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "装填速度",
+      "Min": 3.8,
+      "Max": 4.6
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -6.8,
+      "Max": -8.3
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.2,
+      "Max": 0.24
+    }
+  ],
+  "S2M": [
+    {
+      "Property": "多重射击",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.2
+    },
+    {
+      "Property": "伤害",
+      "Min": 20.4,
+      "Max": 25.0,
+      "MinusMin": -8.2,
+      "MinusMax": -10.0
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.3
+    },
+    {
+      "Property": "暴击率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "触发几率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 12.4,
+      "Max": 15.1,
+      "MinusMin": -4.9,
+      "MinusMax": -6.0
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 5.6,
+      "Max": 6.8,
+      "MinusMin": -2.2,
+      "MinusMax": -2.7
+    },
+    {
+      "Property": "射速",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "装填速度",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -11.1,
+      "Max": -13.6,
+      "MinusMin": 4.5,
+      "MinusMax": 5.4
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.33,
+      "Max": 0.41,
+      "MinusMin": -0.13,
+      "MinusMax": -0.17
+    }
+  ],
+  "S3M": [
+    {
+      "Property": "多重射击",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "伤害",
+      "Min": 15.5,
+      "Max": 18.9,
+      "MinusMin": -12.4,
+      "MinusMax": -15.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.4,
+      "Max": 11.5,
+      "MinusMin": -7.5,
+      "MinusMax": -9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.2,
+      "Max": 5.2,
+      "MinusMin": -3.4,
+      "MinusMax": -4.1
+    },
+    {
+      "Property": "射速",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "装填速度",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "武器后座力",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.25,
+      "Max": 0.31,
+      "MinusMin": -0.2,
+      "MinusMax": -0.24
+    }
+  ],
+  "P2": [
+    {
+      "Property": "多重射击",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "伤害",
+      "Min": 21.7,
+      "Max": 26.6
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.9,
+      "Max": 14.5
+    },
+    {
+      "Property": "暴击率",
+      "Min": 14.8,
+      "Max": 18.1
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.9,
+      "Max": 12.1
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.5,
+      "Max": 5.4
+    },
+    {
+      "Property": "射速",
+      "Min": 7.4,
+      "Max": 9.0
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 5.0,
+      "Max": 6.1
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 8.9,
+      "Max": 10.9
+    },
+    {
+      "Property": "装填速度",
+      "Min": 5.0,
+      "Max": 6.1
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -8.9,
+      "Max": -10.9
+    },
+    {
+      "Property": "变焦",
+      "Min": 7.9,
+      "Max": 9.7
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.26,
+      "Max": 0.32
+    }
+  ],
+  "P3": [
+    {
+      "Property": "多重射击",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "伤害",
+      "Min": 16.5,
+      "Max": 20.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 9.0,
+      "Max": 11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 11.2,
+      "Max": 13.7
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 7.5,
+      "Max": 9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 3.4,
+      "Max": 4.1
+    },
+    {
+      "Property": "射速",
+      "Min": 5.6,
+      "Max": 6.8
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 3.8,
+      "Max": 4.6
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 6.8,
+      "Max": 8.3
+    },
+    {
+      "Property": "装填速度",
+      "Min": 3.8,
+      "Max": 4.6
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -6.8,
+      "Max": -8.3
+    },
+    {
+      "Property": "变焦",
+      "Min": 6.0,
+      "Max": 7.3
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.2,
+      "Max": 0.24
+    }
+  ],
+  "P2M": [
+    {
+      "Property": "多重射击",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.2
+    },
+    {
+      "Property": "伤害",
+      "Min": 27.2,
+      "Max": 33.2,
+      "MinusMin": -10.9,
+      "MinusMax": -13.3
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 14.8,
+      "Max": 18.1,
+      "MinusMin": -5.9,
+      "MinusMax": -7.3
+    },
+    {
+      "Property": "暴击率",
+      "Min": 18.6,
+      "Max": 22.7,
+      "MinusMin": -7.4,
+      "MinusMax": -9.1
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "触发几率",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 12.4,
+      "Max": 15.1,
+      "MinusMin": -4.9,
+      "MinusMax": -6.0
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 5.6,
+      "Max": 6.8,
+      "MinusMin": -2.2,
+      "MinusMax": -2.7
+    },
+    {
+      "Property": "射速",
+      "Min": 9.2,
+      "Max": 11.3,
+      "MinusMin": -3.7,
+      "MinusMax": -4.5
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 11.1,
+      "Max": 13.6,
+      "MinusMin": -4.5,
+      "MinusMax": -5.4
+    },
+    {
+      "Property": "装填速度",
+      "Min": 6.2,
+      "Max": 7.6,
+      "MinusMin": -2.5,
+      "MinusMax": -3.0
+    },
+    {
+      "Property": "武器后座力",
+      "Min": -11.1,
+      "Max": -13.6,
+      "MinusMin": 4.5,
+      "MinusMax": 5.4
+    },
+    {
+      "Property": "变焦",
+      "Min": 9.9,
+      "Max": 12.1,
+      "MinusMin": -4.0,
+      "MinusMax": -4.8
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.33,
+      "Max": 0.41,
+      "MinusMin": -0.13,
+      "MinusMax": -0.16
+    }
+  ],
+  "P3M": [
+    {
+      "Property": "多重射击",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "伤害",
+      "Min": 20.6,
+      "Max": 25.2,
+      "MinusMin": -16.5,
+      "MinusMax": -20.1
+    },
+    {
+      "Property": "物理伤害",
+      "Min": 11.2,
+      "Max": 13.7,
+      "MinusMin": -9.0,
+      "MinusMax": -11.0
+    },
+    {
+      "Property": "暴击率",
+      "Min": 14.1,
+      "Max": 17.2,
+      "MinusMin": -11.2,
+      "MinusMax": -13.7
+    },
+    {
+      "Property": "暴击伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "元素伤害",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "触发几率",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "状态持续时间",
+      "Min": 9.4,
+      "Max": 11.5,
+      "MinusMin": -7.5,
+      "MinusMax": -9.2
+    },
+    {
+      "Property": "对派系伤害",
+      "Min": 4.2,
+      "Max": 5.2,
+      "MinusMin": -3.4,
+      "MinusMax": -4.1
+    },
+    {
+      "Property": "射速",
+      "Min": 7.0,
+      "Max": 8.6,
+      "MinusMin": -5.6,
+      "MinusMax": -6.8
+    },
+    {
+      "Property": "弹匣容量",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "弹药最大值",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "弹道飞行速度",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "装填速度",
+      "Min": 4.7,
+      "Max": 5.7,
+      "MinusMin": -3.8,
+      "MinusMax": -4.6
+    },
+    {
+      "Property": "武器后座力",
+      "Min": 8.4,
+      "Max": 10.3,
+      "MinusMin": -6.8,
+      "MinusMax": -8.3
+    },
+    {
+      "Property": "变焦",
+      "Min": 7.5,
+      "Max": 9.2,
+      "MinusMin": -6.0,
+      "MinusMax": -7.3
+    },
+    {
+      "Property": "穿透",
+      "Min": 0.256,
+      "Max": 0.31,
+      "MinusMin": -0.2,
+      "MinusMax": -0.24
+    }
+  ]
+}

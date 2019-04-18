@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="Rename" type="com.example.entity.Rename" />
+        <typeAlias alias="Rivendaily" type="com.example.entity.Rivendaily" />
+        <typeAlias alias="Riventotal" type="com.example.entity.Riventotal" />
+        <typeAlias alias="Rivenhave" type="com.example.entity.Rivenhave" />
+        <typeAlias alias="SubscribeKey" type="com.example.entity.SubscribeKey" />
+        <typeAlias alias="Goods" type="com.example.entity.Goods" />
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="org.sqlite.JDBC" />
+                <property name="url" value="jdbc:sqlite:app\\com.sobte.cqp.jcq\\app\\com.example.demo\\robot.db" />
+                <!--<property name="username" value="" />-->
+                <!--<property name="password" value="" />-->
+                <!--<property name="driver.journal_mode" value="OFF" />-->
+                <!--<property name="driver.synchronous" value="NORMAL" />-->
+                <!--<property name="driver.transaction_mode" value="IMMEDIATE" />-->
+                <!--<property name="poolMaximumIdleConnections" value="1"/>-->
+                <!--<property name="poolMaximumActiveConnections" value="1"/>-->
+                <!--<property name="poolPingQuery" value="SELECT * FROM rename" />-->
+                <!--<property name="poolPingEnabled" value="true" />-->
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="com/example/dao/RenameMapper.xml" />
+        <mapper resource="com/example/dao/RivendailyMapper.xml" />
+        <mapper resource="com/example/dao/RivenhaveMapper.xml" />
+        <mapper resource="com/example/dao/RiventotalMapper.xml" />
+        <mapper resource="com/example/dao/SubscribeMapper.xml" />
+        <mapper resource="com/example/dao/GoodsMapper.xml" />
+
+        <!--<package name="com.example.dao"/>-->
+    </mappers>
+</configuration>

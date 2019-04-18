@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dao.RivendailyMapper" >
+  <resultMap id="BaseResultMap" type="com.example.entity.Rivendaily" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="rivenName" property="rivenname" jdbcType="VARCHAR" />
+    <result column="qq" property="qq" jdbcType="INTEGER" />
+    <result column="propertyStr" property="propertystr" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, rivenName, qq, propertyStr, time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from rivendaily
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from rivendaily
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.entity.Rivendaily" >
+    insert into rivendaily (id, rivenName, qq, 
+      propertyStr, time)
+    values (#{id,jdbcType=VARCHAR}, #{rivenname,jdbcType=VARCHAR}, #{qq,jdbcType=INTEGER},
+      #{propertystr,jdbcType=VARCHAR}, #{time,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.Rivendaily" >
+    insert into rivendaily
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="rivenname != null" >
+        rivenName,
+      </if>
+      <if test="qq != null" >
+        qq,
+      </if>
+      <if test="propertystr != null" >
+        propertyStr,
+      </if>
+      <if test="time != null" >
+        time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="rivenname != null" >
+        #{rivenname,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null" >
+        #{qq,jdbcType=INTEGER},
+      </if>
+      <if test="propertystr != null" >
+        #{propertystr,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        #{time,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.entity.Rivendaily" >
+    update rivendaily
+    <set >
+      <if test="rivenname != null" >
+        rivenName = #{rivenname,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null" >
+        qq = #{qq,jdbcType=INTEGER},
+      </if>
+      <if test="propertystr != null" >
+        propertyStr = #{propertystr,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.entity.Rivendaily" >
+    update rivendaily
+    set rivenName = #{rivenname,jdbcType=VARCHAR},
+      qq = #{qq,jdbcType=INTEGER},
+      propertyStr = #{propertystr,jdbcType=VARCHAR},
+      time = #{time,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

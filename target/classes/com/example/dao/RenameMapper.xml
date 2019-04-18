@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dao.RenameMapper" >
+  <resultMap id="BaseResultMap" type="com.example.entity.Rename" >
+    <id column="qq" property="qq" jdbcType="VARCHAR" />
+    <result column="userName" property="username" jdbcType="VARCHAR" />
+    <result column="robotName" property="robotname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    qq, userName, robotName
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from rename
+    where qq = #{qq,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from rename
+    where qq = #{qq,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.entity.Rename" >
+    insert into rename (qq, userName, robotName
+      )
+    values (#{qq,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{robotname,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.Rename" >
+    insert into rename
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="qq != null" >
+        qq,
+      </if>
+      <if test="username != null" >
+        userName,
+      </if>
+      <if test="robotname != null" >
+        robotName,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="qq != null" >
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="robotname != null" >
+        #{robotname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.entity.Rename" >
+    update rename
+    <set >
+      <if test="username != null" >
+        userName = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="robotname != null" >
+        robotName = #{robotname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where qq = #{qq,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.entity.Rename" >
+    update rename
+    set userName = #{username,jdbcType=VARCHAR},
+      robotName = #{robotname,jdbcType=VARCHAR}
+    where qq = #{qq,jdbcType=VARCHAR}
+  </update>
+</mapper>

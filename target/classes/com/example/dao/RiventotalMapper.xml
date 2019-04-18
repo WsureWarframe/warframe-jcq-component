@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dao.RiventotalMapper" >
+  <resultMap id="BaseResultMap" type="com.example.entity.Riventotal" >
+    <id column="qq" property="qq" jdbcType="INTEGER" />
+    <result column="maxDaily" property="maxdaily" jdbcType="INTEGER" />
+    <result column="maxHave" property="maxhave" jdbcType="INTEGER" />
+    <result column="rollCount" property="rollcount" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    qq, maxDaily, maxHave, rollCount
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from riventotal
+    where qq = #{qq,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from riventotal
+    where qq = #{qq,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.entity.Riventotal" >
+    insert into riventotal (qq, maxDaily, maxHave, 
+      rollCount)
+    values (#{qq,jdbcType=INTEGER}, #{maxdaily,jdbcType=INTEGER}, #{maxhave,jdbcType=INTEGER}, 
+      #{rollcount,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.Riventotal" >
+    insert into riventotal
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="qq != null" >
+        qq,
+      </if>
+      <if test="maxdaily != null" >
+        maxDaily,
+      </if>
+      <if test="maxhave != null" >
+        maxHave,
+      </if>
+      <if test="rollcount != null" >
+        rollCount,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="qq != null" >
+        #{qq,jdbcType=INTEGER},
+      </if>
+      <if test="maxdaily != null" >
+        #{maxdaily,jdbcType=INTEGER},
+      </if>
+      <if test="maxhave != null" >
+        #{maxhave,jdbcType=INTEGER},
+      </if>
+      <if test="rollcount != null" >
+        #{rollcount,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.entity.Riventotal" >
+    update riventotal
+    <set >
+      <if test="maxdaily != null" >
+        maxDaily = #{maxdaily,jdbcType=INTEGER},
+      </if>
+      <if test="maxhave != null" >
+        maxHave = #{maxhave,jdbcType=INTEGER},
+      </if>
+      <if test="rollcount != null" >
+        rollCount = #{rollcount,jdbcType=INTEGER},
+      </if>
+    </set>
+    where qq = #{qq,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.entity.Riventotal" >
+    update riventotal
+    set maxDaily = #{maxdaily,jdbcType=INTEGER},
+      maxHave = #{maxhave,jdbcType=INTEGER},
+      rollCount = #{rollcount,jdbcType=INTEGER}
+    where qq = #{qq,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dao.SubscribeMapper" >
+  <resultMap id="BaseResultMap" type="com.example.entity.SubscribeKey" >
+    <id column="qq" property="qq" jdbcType="VARCHAR" />
+    <id column="id" property="id" jdbcType="INTEGER" />
+  </resultMap>
+
+  <delete id="deleteByPrimaryKey" parameterType="com.example.entity.SubscribeKey" >
+    delete from subscribe
+    where qq = #{qq,jdbcType=VARCHAR}
+      and id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.entity.SubscribeKey" >
+    insert into subscribe (qq, id)
+    values (#{qq,jdbcType=VARCHAR}, #{id,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.SubscribeKey" >
+    insert into subscribe
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="qq != null" >
+        qq,
+      </if>
+      <if test="id != null" >
+        id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="qq != null" >
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+  <select id="getSubQQs" resultType="java.lang.Long" parameterType="java.lang.String">
+    SELECT qq FROM goods g,subscribe s WHERE g.id = s.id AND g.name = #{name,jdbcType=VARCHAR}
+  </select>
+
+  <select id="getMySub" resultType="java.lang.String" parameterType="java.lang.Long">
+    SELECT name from goods g,subscribe s WHERE g.id = s.id AND s.qq = #{qq,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectByKeys" resultType="java.lang.Integer" parameterType="com.example.entity.SubscribeKey">
+    select count(*) from subscribe WHERE qq = #{qq,jdbcType=VARCHAR}
+      and id = #{id,jdbcType=INTEGER}
+  </select>
+
+</mapper>
