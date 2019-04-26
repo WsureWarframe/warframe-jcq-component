@@ -32,5 +32,11 @@
 ## 致谢
 
 本项目使用的API接口来自[WFCD的https://api.warframestat.us/pc](https://github.com/WFCD/warframe-worldstate-parser)
-词库来自[云之幻(Richasy)](https://github.com/Richasy)，wiki查询数据来源来自[灰机wiki](https://warframe.huijiwiki.com/)
-WM查询来自[Warframe.Market](https://warframe.market/),RM查询来自[Riven.Market](https://riven.market/)
+
+词库来自[云之幻(Richasy)](https://github.com/Richasy)
+
+wiki查询数据来源来自[灰机wiki](https://warframe.huijiwiki.com/)
+
+WM查询来自[Warframe.Market](https://warframe.market/)
+
+RM查询来自[Riven.Market](https://riven.market/)
