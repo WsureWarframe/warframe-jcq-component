@@ -40,8 +40,16 @@ public class RivenCroe {
             Riven riven = getRivenItem(name);
             Map result=new HashMap();
             result.put("riven",riven);
-            String query = type.substring(0, 1) + perNum;
-
+            //type ZAW
+            String query = "";
+            switch (type){
+                case "ZAW":
+                    query = "M" + perNum;
+                    break;
+                default:
+                    query = type.substring(0, 1) + perNum;
+                    break;
+            }
             if (isMinus) {
                 query += 'M';
             }

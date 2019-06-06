@@ -23,7 +23,8 @@ public class RivenTool {
             case "Rifle" : return "步枪 裂罅";
             case "Pistol": return "手枪 裂罅";
             case "Melee" : return "近战 裂罅";
-            default: return null;
+            case "ZAW" : return "ZAW 裂罅";
+            default: return en+" 裂罅";
         }
     }
 
