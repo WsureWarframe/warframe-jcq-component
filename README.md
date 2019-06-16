@@ -16,7 +16,7 @@
 
 6. enjoy it
 
-## 快速使用[视频教程](https://www.bilibili.com/video/av53646289)
+## 快速使用[【视频教程】](https://www.bilibili.com/video/av53646289)
 1.下载32位jdk，并且安装
 
 2.将Release版本包解压丢进酷Q的`CQA.exe`或`CQP.exe`所在目录
