@@ -8,6 +8,8 @@ import com.example.tool.JsonTool;
 import java.util.*;
 
 import static com.example.core.WfaSearch.bubbleSort;
+import static com.example.core.WfaSearch.objCompareTo;
+import static com.sobte.cqp.jcq.event.JcqApp.CQ;
 
 public class MarketSearch {
 
@@ -137,7 +139,13 @@ public class MarketSearch {
                     top5seller.add(map);
                 }
             }
-            top5seller = bubbleSort(top5seller,"platinum");
+            Collections.sort(top5seller, new Comparator<Map>() {
+                @Override
+                public int compare(Map o1, Map o2) {
+                    return objCompareTo(o1.get("platinum"),o2.get("platinum"));
+                }
+            });
+//                    bubbleSort(top5seller,"platinum");
             prices=statisticsMaps.get(statisticsMaps.size()-1);
 
             reMsg =  "估计价格区间："+prices.get("min_price")+" - "+prices.get("max_price")+"p\n";

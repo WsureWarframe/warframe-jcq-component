@@ -25,8 +25,15 @@ public class WfaSearch {
                     show.add(map);
                 }
             }
-            show = bubbleSort(show,"Item_Price");
-
+//            show = bubbleSort(show,"Item_Price");
+            Collections.sort(show, new Comparator<Map>() {
+                @Override
+                public int compare(Map o1, Map o2) {
+                    Double d1 = (Double) o1.get("Item_Price");
+                    Double d2 = (Double) o2.get("Item_Price");
+                    return d1.compareTo(d2);
+                }
+            });
             if(show.size()<=0)
                 return reMsg+="没有出售信息！";
             for(int i=0;i<(show.size()>=5?5:show.size());i++)
@@ -50,7 +57,7 @@ public class WfaSearch {
         {
             for(int j = 0 ;j < size-1-i ; j++)
             {
-                if((int)show.get(j).get(key) > (int)show.get(j+1).get(key))  //交换两数位置
+                if(objCompareTo(show.get(j).get(key),show.get(j+1).get(key))  >0 )  //交换两数位置
                 {
                     show.add(j, show.get(j+1));
                     show.add(j+1+1, show.get(j+1));
@@ -60,5 +67,22 @@ public class WfaSearch {
             }
         }
         return show;
+    }
+
+    public static int objCompareTo(Object a,Object b)
+    {
+        if(a instanceof Integer)
+            a = new Double(((Integer) a).intValue());
+        if(b instanceof Integer)
+            b = new Double(((Integer) b).intValue());
+        if(a instanceof Double && b instanceof Double)
+        {
+            return ((Double) a).compareTo((Double) b);
+        } else if(a instanceof Integer && b instanceof Integer){
+            return ((Integer) a).compareTo((Integer) b);
+        } else if(a instanceof Long && b instanceof Long){
+            return ((Long) a).compareTo((Long) b);
+        }
+        return 0;
     }
 }

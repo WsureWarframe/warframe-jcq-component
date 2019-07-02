@@ -86,6 +86,7 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
         // 要测试主类就先实例化一个主类对象
         Demo demo = new Demo();
         // 下面对主类进行各方法测试,按照JCQ运行过程，模拟实际情况
+        demo.privateMsg(0, 10012, 2222222224L, "WM 充电弹头p", 0);
         demo.startup();// 程序运行开始 调用应用初始化方法
         demo.enable();// 程序初始化完成后，启用应用，让应用正常工作
         // 开始模拟发送消息
@@ -96,7 +97,7 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
 //        demo.privateMsg(0, 10002, 2222222224L, "rm 海波斯 库拉对剑", 0);
 //        demo.privateMsg(0, 10005, 2222222224L, "rm 德塔特", 0);
 //        demo.privateMsg(0, 10003, 2222212224L, "rm le nz", 0);
-//        demo.privateMsg(0, 10006, 2222222224L, "rm LANKA", 0);
+        demo.privateMsg(0, 10006, 2222222224L, "rm LANKA", 0);
 //        demo.privateMsg(0, 10007, 2222222224L, "警报", 0);
 //        demo.privateMsg(0, 10008, 2222222224L, "入侵", 0);
 //        demo.privateMsg(0, 10009, 2222222224L, "突击", 0);
@@ -111,7 +112,7 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
 //        demo.privateMsg(0, 10012, 2222222224L, "help", 0);
 //
 //        demo.privateMsg(0, 10012, 2222222224L, "WM查询 奶妈p", 0);
-//        demo.privateMsg(0, 10012, 2222222224L, "WM 充电弹头p", 0);
+        demo.privateMsg(0, 10012, 2222222224L, "WM 充电弹头p", 0);
 //        demo.privateMsg(0, 10013, 2222222224L, "wiki 西格玛&南极座", 0);
 //        demo.privateMsg(0, 10015, 2222222224L, "小小黑", 0);
 //        demo.privateMsg(0, 10014, 2222222224L, "wfa 创伤", 0);
@@ -128,9 +129,9 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
 //        demo.groupMsg(0, 10008, 3456789012L, 11111111114L, "", "爬取url https://www.baidu.com", 0);
 
 //        demo.groupMsg(0, 10010, 844157922L, 844157922L, "", "别名 Sci-critatak", 0);
-        demo.groupMsg(0, 10011, 427984429L, 11111111114L, "", "ffwiki 诗人", 0);
-        demo.groupMsg(0, 10012, 427984429L, 11111111114L, "", "全局wiki 吟游诗人", 0);
-        demo.groupMsg(0, 10013, 427984429L, 11111111114L, "", "ffwiki 紫水宫", 0);
+//        demo.groupMsg(0, 10011, 427984429L, 11111111114L, "", "ffwiki 诗人", 0);
+//        demo.groupMsg(0, 10012, 427984429L, 11111111114L, "", "全局wiki 吟游诗人", 0);
+//        demo.groupMsg(0, 10013, 427984429L, 11111111114L, "", "ffwiki 紫水宫", 0);
         // ......
         // 依次类推，可以根据实际情况修改参数，和方法测试效果
         // 以下是收尾触发函数
@@ -310,6 +311,18 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
         }
         CQ.logInfo("rmManagerImpl:",JsonTool.ObjToJson(rmManagerImpl));
     }
+
+    public boolean isReady(){
+        return cacheManagerImpl != null ||
+         dictManagerImpl != null ||
+         cacheListener  != null ||
+         alertListener  != null ||
+         saleManagerImpl != null ||
+         rivenManagerImpl != null ||
+         subManageImpl != null ||
+         rmManagerImpl != null;
+    }
+
     /**
      * 酷Q退出 (Type=1002)<br>
      * 本方法会在酷Q【主线程】中被调用。<br>
@@ -368,7 +381,10 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
     public int privateMsg(int subType, int msgId, long fromQQ, String msg, int font) {
         // 这里处理消息
 //        CQ.sendPrivateMsg(fromQQ, "你发送了这样的消息：" + msg + "\n来自Java插件");
-
+        if(!isReady()){
+            CQ.sendPrivateMsg(fromQQ,"少女祈祷中...");
+            return MSG_IGNORE;
+        }
         if(msg.equals(customSettings.get("delMsg").toString())&&cacheManagerImpl.getCacheDataByKey("delFlag_"+fromQQ)!=null)
         {
             CQ.logInfo("撤回消息",""+(int)cacheManagerImpl.getCacheDataByKey("delFlag_"+fromQQ));
@@ -607,7 +623,10 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
 //            CQ.sendGroupMsg(fromGroup,"deCode的MSG:"+deMsg);
 //            CQ.sendGroupMsg(fromGroup,"deCode的MSG:\n"+CQCode.encode(deMsg,true)+"\n"+CQCode.encode(deMsg,false));
 //        }
-
+        if(!isReady()){
+            CQ.sendGroupMsg(fromGroup,"少女祈祷中...");
+            return MSG_IGNORE;
+        }
         if(msg.equals(customSettings.get("delMsg").toString())&&cacheManagerImpl.getCacheDataByKey("groupDelFlag_"+fromGroup)!=null)
         {
 
@@ -913,12 +932,16 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
         else {  CQ.sendGroupMsg(fromGroup,CC.at(fromQQ)+reMsg);    }
     }
 
-    public boolean isMasterQQ(Long qq)
+    public boolean isMasterQQ(long qq)
     {
-        ArrayList<Integer> masterQQs = (ArrayList<Integer>) customSettings.get("masterQQ");
-        for(long mq:masterQQs)
+        if(customSettings.get("masterQQ") instanceof String)
         {
-            if(qq.longValue()==mq)
+            return (qq+"").equals((String)customSettings.get("masterQQ"));
+        }
+        List masterQQs = (List) customSettings.get("masterQQ");
+        for(Object mq:masterQQs)
+        {
+            if(qq==Long.parseLong(mq.toString()))
             {
                 return true;
             }
@@ -928,7 +951,7 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
 
     public void sendToMaster(String msg)
     {
-        ArrayList<Integer> masterQQs = (ArrayList<Integer>) customSettings.get("masterQQ");
+        ArrayList<Long> masterQQs = (ArrayList<Long>) customSettings.get("masterQQ");
         for(long mq:masterQQs)
         {
             CQ.sendPrivateMsg(mq,msg);
