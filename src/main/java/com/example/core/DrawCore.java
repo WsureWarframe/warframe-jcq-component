@@ -1,13 +1,13 @@
 package com.example.core;
 
-import com.sobte.cqp.jcq.message.CQCode;
+import org.meowy.cqp.jcq.message.CQCode;
 
-import com.sobte.cqp.jcq.entity.Member;
+import org.meowy.cqp.jcq.entity.Member;
 import java.util.List;
 import java.util.Random;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CC;
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CC;
+import static com.example.Demo.CQ;
 
 public class DrawCore {
     public void draw(String msg,long fromGroup,long fromQQ)
@@ -16,7 +16,7 @@ public class DrawCore {
         Long pqq = null;
         for(Long qq:longs)
         {
-            if(CQ.getGroupMemberInfo(fromGroup,qq).getAuthority()==1)
+            if(CQ.getGroupMemberInfo(fromGroup,qq).getAuthority().value()==1)
             {
                 pqq=qq;
             }

@@ -6,14 +6,14 @@ import com.example.dao.SubscribeMapper;
 import com.example.entity.Goods;
 import com.example.entity.Mission;
 import com.example.tool.*;
-import com.sobte.cqp.jcq.entity.Group;
+import org.meowy.cqp.jcq.entity.Group;
 import org.apache.ibatis.session.SqlSession;
 
 import java.text.ParseException;
 import java.util.*;
 
 import static com.example.tool.TimeTool.dateToStamp;
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class AlertListener extends Thread{
     private CacheManagerImpl cacheManagerImpl;

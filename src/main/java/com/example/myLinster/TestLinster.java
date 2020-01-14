@@ -1,6 +1,6 @@
 package com.example.myLinster;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class TestLinster {
     public TestLinster() {

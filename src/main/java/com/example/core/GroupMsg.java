@@ -1,11 +1,11 @@
 package com.example.core;
 
-import com.sobte.cqp.jcq.entity.Group;
+import org.meowy.cqp.jcq.entity.Group;
 
 import java.util.List;
 import java.util.Random;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class GroupMsg {
     List<Group> groups ;

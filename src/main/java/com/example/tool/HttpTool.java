@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.example.tool.PropertiesTool.fileReader;
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class HttpTool {
     static String urlStr = "https://api.warframestat.us/pc/";
@@ -145,10 +145,10 @@ public class HttpTool {
      * */
     public String httpsRequest(String requestUrl,String requestMethod,String outputStr,Map<String,String> hader){
         StringBuffer buffer=null;
-        System.setProperty("http.proxyHost", "127.0.0.1");
-        System.setProperty("https.proxyHost", "127.0.0.1");
-        System.setProperty("http.proxyPort", "8888");
-        System.setProperty("https.proxyPort", "8888");
+//        System.setProperty("http.proxyHost", "127.0.0.1");
+//        System.setProperty("https.proxyHost", "127.0.0.1");
+//        System.setProperty("http.proxyPort", "8888");
+//        System.setProperty("https.proxyPort", "8888");
         System.setProperty("http.agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16");
         try{
             //创建SSLContext

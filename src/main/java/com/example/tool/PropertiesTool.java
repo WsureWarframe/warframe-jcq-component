@@ -7,7 +7,7 @@ import java.io.*;
 import java.lang.reflect.Field;
 import java.util.*;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class PropertiesTool {
 
@@ -65,11 +65,11 @@ public class PropertiesTool {
 
     public static Map initSettingMap(String settingPath)
     {
+        CQ.logInfo("settingPath",settingPath);
         Map settings= (Map) JsonTool.jsonToMap(fileReader(settingPath));
-        for (int i=0;i<defaultSettings.length;i++)
-        {
-            if(settings.get(defaultSettings[i][0])==null)
-                settings.put(defaultSettings[i][0],defaultSettings[i][1]);
+        for (String[] defaultSetting : defaultSettings) {
+            if (settings.get(defaultSetting[0]) == null)
+                settings.put(defaultSetting[0], defaultSetting[1]);
         }
         return settings;
     }
@@ -77,10 +77,9 @@ public class PropertiesTool {
     public static Map initKeysMap(String keysPath)
     {
         Map keys= (Map) JsonTool.jsonToMap(fileReader(keysPath));
-        for (int i=0;i<defaultKeys.length;i++)
-        {
-            if(keys.get(defaultKeys[i][0])==null)
-                keys.put(defaultKeys[i][0],defaultKeys[i][1]);
+        for (String[] defaultKey : defaultKeys) {
+            if (keys.get(defaultKey[0]) == null)
+                keys.put(defaultKey[0], defaultKey[1]);
         }
         return keys;
 

@@ -15,7 +15,7 @@
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
                 <property name="driver" value="org.sqlite.JDBC" />
-                <property name="url" value="jdbc:sqlite:app\\com.sobte.cqp.jcq\\app\\com.example.demo\\robot.db" />
+                <property name="url" value="jdbc:sqlite:data/app/org.meowy.cqp.jcq/app/com.example.demo/robot.db" />
                 <!--<property name="username" value="" />-->
                 <!--<property name="password" value="" />-->
                 <!--<property name="driver.journal_mode" value="OFF" />-->

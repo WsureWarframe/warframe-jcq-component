@@ -1,0 +1,11 @@
+bin/
+build/
+out/
+build.number*
+.classpath
+.project
+build_scofild.xml
+sz-cached.iml
+*.iml
+.idea
+target/

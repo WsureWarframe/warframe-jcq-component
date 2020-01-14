@@ -11,10 +11,14 @@ import com.example.entity.RivenProperty;
 import com.example.entity.Sale;
 import com.example.myLinster.AlertListener;
 import com.example.tool.*;
-import com.sobte.cqp.jcq.entity.*;
-import com.sobte.cqp.jcq.event.JcqAppAbstract;
-import com.sobte.cqp.jcq.message.CQCode;
+import org.meowy.cqp.jcq.entity.*;
+import org.meowy.cqp.jcq.event.JcqAppAbstract;
+import org.meowy.cqp.jcq.message.CQCode;
 import org.apache.ibatis.session.SqlSession;
+import org.meowy.cqp.jcq.entity.ICQVer;
+import org.meowy.cqp.jcq.entity.IMsg;
+import org.meowy.cqp.jcq.entity.IRequest;
+import org.meowy.cqp.jcq.event.JcqAppAbstract;
 
 import javax.swing.*;
 
@@ -39,8 +43,8 @@ import static com.example.tool.TimeTool.getTomorrowZeroSeconds;
  * 例：appid(com.example.demo) 则加载类 com.example.Demo<br>
  * 文档地址： https://gitee.com/Sobte/JCQ-CoolQ <br>
  * 帖子：https://cqp.cc/t/37318 <br>
- * 辅助开发变量: {@link JcqAppAbstract#CQ CQ}({@link com.sobte.cqp.jcq.entity.CoolQ 酷Q核心操作类}),
- * {@link JcqAppAbstract#CC CC}({@link com.sobte.cqp.jcq.message.CQCode 酷Q码操作类}),
+ * 辅助开发变量: {@link JcqAppAbstract#CQ CQ}({@link org.meowy.cqp.jcq.entity.CoolQ 酷Q核心操作类}),
+ * {@link JcqAppAbstract#CC CC}({@link org.meowy.cqp.jcq.message.CQCode 酷Q码操作类}),
  * 具体功能可以查看文档
  */
 public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
@@ -78,13 +82,27 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
     GoodsMapper goodsMapper;
     SubscribeMapper subscribeMapper;
     RenameMapper renameMapper;
+    public static CoolQ CQ = null;
+    public static CQCode CC = new CQCode();
+    /**
+     * 使用新的方式加载CQ （建议使用这种方式）
+     *
+     * @param CQ CQ初始化
+     */
+    public Demo(CoolQ CQ) {
+        super(CQ);
+    }
+
+
     public static void main(String[] args) throws Exception {
+        Demo demo = new Demo(CQ);
+        CQ = demo.getCoolQ();
         // CQ此变量为特殊变量，在JCQ启动时实例化赋值给每个插件，而在测试中可以用CQDebug类来代替他
         CQ = new CQDebug();//new CQDebug("应用目录","应用名称") 可以用此构造器初始化应用的目录
         CQ.logInfo("`" +
                 "[JCQ] TEST Demo", "测试启动");// 现在就可以用CQ变量来执行任何想要的操作了
         // 要测试主类就先实例化一个主类对象
-        Demo demo = new Demo();
+
         // 下面对主类进行各方法测试,按照JCQ运行过程，模拟实际情况
         demo.privateMsg(0, 10012, 2222222224L, "WM 充电弹头p", 0);
         demo.startup();// 程序运行开始 调用应用初始化方法
@@ -167,11 +185,12 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
      */
     public int startup() {
 
+        CQ = this.getCoolQ();
 
-        String proDirectory = System.getProperty("user.dir")+"\\app\\com.sobte.cqp.jcq\\app\\"+AppID+"\\"; //CQ.getAppDirectory();
-        String devDirectory = System.getProperty("user.dir")+"\\";
+        String devDirectory = System.getProperty("user.dir")+"/data/app/org.meowy.cqp.jcq/app/"+AppID+"/"; //CQ.getAppDirectory();
+        String proDirectory = CQ.getAppDirectory()+"/";
         // 获取应用数据目录(无需储存数据时，请将此行注释)
-        String appDirectory = devDirectory.equals(CQ.getAppDirectory())? devDirectory : proDirectory;
+        String appDirectory = devDirectory.equals(proDirectory)? proDirectory : devDirectory;
 //        customSettings
         CQ.logInfo("CQ.getAppDirectory()",CQ.getAppDirectory());
         CQ.logInfo("文件目录",appDirectory);
@@ -224,7 +243,7 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
             CQ.logInfo("notice","notice已发送到全部群");
         }
 
-        // 返回如：D:\CoolQ\app\com.sobte.cqp.jcq\app\com.example.demo\
+        // 返回如：D:\CoolQ\app\org.meowy.cqp.jcq\app\com.example.demo\
         // 应用的所有数据、配置【必须】存放于此目录，避免给用户带来困扰。
 
         sqlSession = DBTools.getSession();
@@ -743,9 +762,9 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
 
         if(msg.equals(customSettings.get("draw").toString()))
         {
-            if(CQ.getGroupMemberInfo(fromGroup,CQ.getLoginQQ()).getAuthority()>1)
+            if(CQ.getGroupMemberInfo(fromGroup,CQ.getLoginQQ()).getAuthority().value()>1)
             {
-                if(CQ.getGroupMemberInfo(fromGroup,fromQQ).getAuthority()>1)
+                if(CQ.getGroupMemberInfo(fromGroup,fromQQ).getAuthority().value()>1)
                 {
                     CQ.sendGroupMsg(fromGroup,CC.at(fromQQ)  +" 管理狗无权抽奖（自裁吧");
                 }
@@ -761,9 +780,9 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
         }
         if(MarketSearch.getAtKey(msg,customSettings.get("persecute").toString())!=null)
         {
-            if(CQ.getGroupMemberInfo(fromGroup,CQ.getLoginQQ()).getAuthority()>1)
+            if(CQ.getGroupMemberInfo(fromGroup,CQ.getLoginQQ()).getAuthority().value()>1)
             {
-                if(CQ.getGroupMemberInfo(fromGroup,fromQQ).getAuthority()>1)
+                if(CQ.getGroupMemberInfo(fromGroup,fromQQ).getAuthority().value()>1)
                 {
                     CQ.sendGroupMsg(fromGroup,CC.at(fromQQ)  +"管理无法介入");
                 }
@@ -1062,6 +1081,11 @@ public class Demo extends JcqAppAbstract implements ICQVer, IMsg, IRequest {
         // 这里处理消息
 
         return MSG_IGNORE;
+    }
+
+    @Override
+    public int groupBan(int i, int i1, long l, long l1, long l2, long l3) {
+        return 0;
     }
 
     /**

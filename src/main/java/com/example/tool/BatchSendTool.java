@@ -2,7 +2,7 @@ package com.example.tool;
 
 import java.util.ArrayList;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class BatchSendTool extends Thread{
     private ArrayList<Long> qqs;

@@ -1,6 +1,6 @@
 package com.example.Cache;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class CacheListener extends Thread{
     private CacheManagerImpl cacheManagerImpl;

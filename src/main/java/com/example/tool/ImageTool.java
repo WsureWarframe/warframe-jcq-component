@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import static com.example.Demo.rmProperty;
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class ImageTool {
     public String ImageCreate(String phantomjsPath,String screenshotPath,String url,String filePath) throws IOException {

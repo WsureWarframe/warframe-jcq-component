@@ -9,7 +9,7 @@ import java.util.*;
 
 import static com.example.core.WfaSearch.bubbleSort;
 import static com.example.core.WfaSearch.objCompareTo;
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class MarketSearch {
 

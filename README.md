@@ -1,12 +1,23 @@
 # warframe-jcq-component
 一个java语言编写的酷Q机器人插件，借助了JCQ插件做中转，调用酷Q的原生API
 
-#### 这是一个`废弃的项目`，本人将不再提供后续维护，新项目请移步[warframe-info-api](https://github.com/WsureDev/waframe-info-api).但是这并不妨碍您的使用和学习
+#### 此项目将重新启用 并且逐步重构
+原因： 在经过调研HTTP-Api和FF14的 獭.net 机器人之后，我不得不承认它的设计在某些方面很棒，但是也面临一些尴尬的窘境
+    
+    http-api + 后台服务 架构的优缺点：
+    优点： 用户侧配置简单，安装插件只需要http-api插件，本地不处理任何业务，只上报
+    缺点： 服务端使用ws长连接或者http请求与用户侧通信，对服务器侧的性能要求十分高，并且长连接会占用连接池
+     ，这就是为什么ff14的獭机器人用户面临官方窝满了被挤掉和ws假死需要重启服务。解决方案只有再搭新窝
+      
+ 所以经过权衡，最终决定使用本地处理无需联网业务+服务端提供需要联网数据借口的结构。这样虽然用户侧安装的东西可能会多一点，但是保证了性能和可靠性。
+ 更新可以使用release版本的懒人包轻松部署（小版本可选择不更新）
+ 
+ 统一远端服务项目请移步[【warframe-info-api】](https://github.com/WsureDev/waframe-info-api) 
 
 ## 如何使用
 1.在使用之前，您需要了解什么是[jcq](https://cqp.cc/t/37318)，[以及如何入门](https://github.com/Sobte/JCQ-CoolQ)
 
-2.在您配置好了jcq环境之后，在 酷Q目录\app\com.sobte.cqp.jcq\app\ 内拷贝`com.example.demo.json`、`com.example.demo.jar`，并且新建`com.example.demo`文件夹
+2.在您配置好了jcq环境之后，在 酷Q目录\data\app\org.meowy.cqp.jcq\app\ 内拷贝`com.example.demo.json`、`com.example.demo.jar`，并且新建`com.example.demo`文件夹
 
 3.在`com.example.demo`文件夹内拷贝如下文件：`Dict.json`、`keys.json`、`rewards.json`、`riven.json`、`rm.json`、`setting.json`、`lib文件夹`、`wiki文件夹`
 

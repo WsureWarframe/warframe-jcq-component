@@ -5,7 +5,7 @@ import com.example.tool.JsonTool;
 
 import java.util.*;
 
-import static com.sobte.cqp.jcq.event.JcqApp.CQ;
+import static com.example.Demo.CQ;
 
 public class WfaSearch {
 
