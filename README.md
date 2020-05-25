@@ -1,7 +1,7 @@
 # warframe-jcq-component
 一个java语言编写的酷Q机器人插件，借助了JCQ插件做中转，调用酷Q的原生API
 
-#### 此项目将重新启用 并且逐步重构
+#### 此项目将重已重构，请移步 [【warframe-bot】](https://github.com/WsureDev/waframe-bot) 
 原因： 在经过调研HTTP-Api和FF14的 獭.net 机器人之后，我不得不承认它的设计在某些方面很棒，但是也面临一些尴尬的窘境
     
     http-api + 后台服务 架构的优缺点：
